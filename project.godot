@@ -8,15 +8,32 @@
 
 config_version=4
 
-_global_script_classes=[  ]
+_global_script_classes=[ {
+"base": "Area2D",
+"class": "Enemy",
+"language": "GDScript",
+"path": "res://scenes/Enemy/Enemy.gd"
+}, {
+"base": "Area2D",
+"class": "EnemyProjectile",
+"language": "GDScript",
+"path": "res://scenes/EnemyProjectile/EnemyProjectile.gd"
+}, {
+"base": "Area2D",
+"class": "PlayerProjectile",
+"language": "GDScript",
+"path": "res://scenes/PlayerProjectile/PlayerProjectile.gd"
+} ]
 _global_script_class_icons={
-
+"Enemy": "",
+"EnemyProjectile": "",
+"PlayerProjectile": ""
 }
 
 [application]
 
 config/name="ProjectS"
-run/main_scene="res://scenes/main_scene.tscn"
+run/main_scene="res://scenes/MainScene/main_scene.tscn"
 
 [display]
 
